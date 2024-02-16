@@ -14,5 +14,10 @@ public class Main {
         f1.setFacultyID(1237045);
         f1.setHiringDate(new myDOB(2,7,2007));
         System.out.println(f1.toString());
+
+        Admin a1 = new Admin("John", "Smite", new myDOB(3,8, 1938));
+        a1.setAdminID(983294);
+        a1.setHiringDate(new myDOB(7,18,1965));
+        System.out.println(a1.toString());
     }
 }
