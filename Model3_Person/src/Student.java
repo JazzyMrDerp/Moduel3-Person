@@ -41,7 +41,7 @@ public class Student extends Person {
 
     @Override
     public String toString() {
-        return "Student{" +
+        return "Student - {" +
                 "firstName: '" + firstName + '\'' +
                 ", lastName: '" + lastName + '\'' +
                 ", DOB: '" + DOB.toString() + '\'' +
