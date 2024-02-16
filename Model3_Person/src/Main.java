@@ -1,15 +1,19 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        Person p1 = new Person();
+        System.out.println(p1.toString());
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+//        Student s1 = new Student();
+//        Student s2 = new Student("Jatan", "Mehta");
+        Student s3 = new Student("Jatan", "Mehta", new myDOB(1,2,3));
+
+        //System.out.println(s1.toString());
+        //System.out.println(s2.toString());
+        s3.setStudentID(2013098);
+        s3.setEnrollmentDate(new myDOB(2,15,23));
+        s3.setGraduationDate(new myDOB(3,16,24));
+
+        System.out.println(s3.toString());
     }
 }
