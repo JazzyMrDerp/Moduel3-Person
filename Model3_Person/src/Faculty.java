@@ -2,6 +2,12 @@ public class Faculty extends Person{
     private myDOB hiringDate;
     private double facultyID;
 
+    Faculty(){
+        this.firstName = "";
+        this.lastName = "";
+        this.DOB = new myDOB();
+    }
+
     Faculty(String _firstname, String _lastName, myDOB _dob){
         this.firstName = _firstname;
         this.lastName = _lastName;

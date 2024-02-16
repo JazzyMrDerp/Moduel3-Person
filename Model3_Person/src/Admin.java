@@ -2,6 +2,12 @@ public class Admin extends Person{
     private myDOB hiringDate;
     private double adminID;
 
+    Admin(){
+        this.firstName = "";
+        this.lastName = "";
+        this.DOB = new myDOB();
+    }
+
     Admin(String _firstname, String _lastName, myDOB _dob){
         this.firstName = _firstname;
         this.lastName = _lastName;

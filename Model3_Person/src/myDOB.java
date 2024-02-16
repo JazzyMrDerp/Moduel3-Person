@@ -3,6 +3,13 @@ public class myDOB {
     private  int day;
     private int year;
 
+
+    myDOB(){
+        this.day = 0;
+        this.month = 0;
+        this.year = 0;
+
+    }
     myDOB(int m, int d, int y){
         this.day = d;
         this.month = m;
@@ -18,6 +25,7 @@ public class myDOB {
 // This overrides the toString function in the Person Class so it formats it like this
     @Override
     public String toString() {
+
         return this.month + "/" + this.day + "/" + this.year;
     }
     //    Takes an object and returns the object

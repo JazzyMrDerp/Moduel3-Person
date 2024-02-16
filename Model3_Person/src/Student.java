@@ -3,6 +3,12 @@ public class Student extends Person {
     private myDOB GraduationDate;
     private  double StudentID;
 
+    Student(){
+        this.firstName = "";
+        this.lastName = "";
+        this.DOB = new myDOB();
+    }
+
     Student(String _firstName, String _lastName, myDOB _dob){
         this.firstName = _firstName;
         this.lastName = _lastName;
@@ -17,12 +23,14 @@ public class Student extends Person {
 
 
     public void setEnrollmentDate(myDOB enrollmentDate) {
+
         this.EnrollmentDate = enrollmentDate;
     }
 
 
 
     public void setGraduationDate(myDOB graduationDate) {
+
         this.GraduationDate = graduationDate;
     }
 
@@ -32,10 +40,12 @@ public class Student extends Person {
     }
 
     public myDOB getEnrollmentDate() {
+
         return this.EnrollmentDate;
     }
 
     public myDOB getGraduationDate() {
+
         return GraduationDate;
     }
 
@@ -50,4 +60,6 @@ public class Student extends Person {
                 ", Graduation Date: '" + getGraduationDate() + '\''+
                 '}';
     }
+
+
 }
